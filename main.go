@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"davidshefcik/tesla-cli/cmd"
+
+	"github.com/spf13/viper"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	viper.SetConfigName("config")
+	viper.AddConfigPath("/etc/appname/")
+	viper.AddConfigPath("$HOME/.appname")
+	viper.AddConfigPath(".")
+	cmd.Execute()
 }
