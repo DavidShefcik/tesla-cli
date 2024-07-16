@@ -25,4 +25,6 @@ func Execute() {
 
 func init() {
 	RootCmd.AddCommand(PingCmd)
+	RootCmd.AddCommand(SetupCmd)
+	RootCmd.AddCommand(GetClientIdCmd)
 }

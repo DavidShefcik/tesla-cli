@@ -22,9 +22,8 @@ tesla-cli
 go.work
 go.work.sum
 
-# env file
-.env*
-!.env.example
-
 # IDE
 .vscode/
+
+# Config
+config.json
